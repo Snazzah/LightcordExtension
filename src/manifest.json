@@ -1,0 +1,50 @@
+{
+  "manifest_version": 2,
+  "name": "Lightcord",
+  "version": "1.0.0",
+  "description": "Helper extension for Lightcord",
+  "author": "Snazzah",
+  "icons": {
+    "48": "icons/48.png",
+    "96": "icons/96.png",
+    "192": "icons/192.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.apps.codespaces.githubusercontent.com/*",
+        "https://lightcord.js.org/*"
+      ],
+      "run_at": "document_end",
+      "js": ["content.js"]
+    }
+  ],
+  "background": {
+    "persistent": true,
+    "scripts": ["background.js"]
+  },
+  "applications": {
+    "gecko": {
+      "id": "lightcord@snazzah.com",
+      "strict_min_version": "53.0"
+    }
+  },
+  "minimum_chrome_version": "65.0.0",
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "https://*.apps.codespaces.githubusercontent.com/*",
+    "https://lightcord.js.org/*",
+    "https://discord.com/api/v*",
+    "https://discordapp.com/api/v*"
+  ],
+  "homepage_url": "https://lightcord.js.org",
+  "browser_action": {
+    "default_icon": {
+      "48": "icons/48.png",
+      "96": "icons/96.png",
+      "192": "icons/192.png"
+    }
+  },
+  "short_name": "Lightcord"
+}
