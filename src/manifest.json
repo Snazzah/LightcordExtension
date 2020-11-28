@@ -43,16 +43,5 @@
     "https://discordapp.com/api/v*"
   ],
   "homepage_url": "https://lightcord.js.org",
-  "browser_action": {
-    "default_icon": {
-      "16": "icons/16.png",
-      "24": "icons/24.png",
-      "48": "icons/48.png",
-      "64": "icons/64.png",
-      "96": "icons/96.png",
-      "128": "icons/128.png",
-      "192": "icons/192.png"
-    }
-  },
   "short_name": "Lightcord"
 }

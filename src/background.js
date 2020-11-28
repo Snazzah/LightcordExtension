@@ -54,13 +54,6 @@ root.webRequest.onBeforeRequest.addListener(
 	['blocking']
 );
 
-// Browser action
-root.browserAction.onClicked.addListener(() => {
-  root.tabs.create({
-    url: 'https://lightcord.js.org'
-  });
-});
-
 // Fix CORS headers
 root.webRequest.onHeadersReceived.addListener(
 	details => {
